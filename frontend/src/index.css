@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Palette roles (validated default dataviz palette; swap for brand values).
+   Sentiment uses a diverging blue<->red scale with a neutral gray midpoint. */
+:root {
+  --surface-1: #fcfcfb;
+  --page: #f9f9f7;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e1e0d9;
+  --baseline: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.1);
+  --accent: #2a78d6;
+
+  --sent-love: #1c5cab;
+  --sent-like: #6da7ec;
+  --sent-meh: #cfcec7;
+  --sent-dislike: #e88583;
+  --sent-cringe: #c22f2e;
+
+  --rate-share: #2a78d6;
+  --rate-skip: #898781;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --grid: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255, 255, 255, 0.1);
+    --accent: #3987e5;
+
+    --sent-love: #3987e5;
+    --sent-like: #9ec5f4;
+    --sent-meh: #4a4a47;
+    --sent-dislike: #e66767;
+    --sent-cringe: #d03b3b;
+
+    --rate-share: #3987e5;
+    --rate-skip: #898781;
+  }
+}
+
+body {
+  background: var(--page);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}

@@ -1,0 +1,4 @@
+respondent_id,age_band,neighbourhood,sentiment,action
+r001,25-34,Downtown / Old Toronto,like,watch_full
+r002,45-54,Scarborough,meh,scroll_past
+r003,18-24,North York,love,share
